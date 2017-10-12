@@ -1,4 +1,6 @@
 <div class="event">
-  <h3><%= event.name %>: <%= event.date %></h3>
-  <h4><%= event.city %></h4>
+  <h3><%= event.name %></h3>
+  <h4>Date: <%= event.date %></h4>
+  <p>Where: <%= event.city %>, Capacity: <%= event.capacity %></p>
+  <aside>created: <%= event.created_at %>, updated: <%= event.updated_at %> </aside>
 </div>
