@@ -3,5 +3,6 @@
 <%= link_to 'New Event', new_event_path %>
 
 <% @events.each do |event| %>
+<h3><%= link_to"#{event.name}", event_path(event) %></h3>
 <%= render 'single_event', event: event %>
 <% end %>
