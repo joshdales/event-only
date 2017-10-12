@@ -1,6 +1,9 @@
 example@form page
 
 <%= form_for @job_application do |f| %>
-<p></p>
+<p>
+  <%= f.label :full_name %>
+  <%= f.text_field :full_name %>
+</p>
 
 <% end %>
