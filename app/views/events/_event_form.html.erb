@@ -1,4 +1,4 @@
-<%= <%= form_for event do |f| %>
+<%= form_for event do |f| %>
 
 <p>
   <%= f.label :name %>
@@ -23,6 +23,11 @@
 <p>
   <%= f.label :updated_at %>
   <%= f.date_field :updated_at %>
+</p>
+
+<p>
+  <%= f.label :city %>
+  <%= f.text_field :city %>
 </p>
 
 <% end %>
