@@ -1,5 +1,4 @@
-example@form page
-
+<div class="new_job_application"
 <%= form_for @job_application do |f| %>
 <p>
   <%= f.label :full_name %>
@@ -19,6 +18,15 @@ example@form page
 <p>
   <%= f.label :years_experience %>
   <%= f.number_field :years_experience %>
+</p>
+
+<p>
+  <%= f.label :available_date %>
+  <%= f.date_field :available_date %>
+</p>
+
+<p>
+  <%= f.submit %>
 </p>
 
 <% end %>
