@@ -5,7 +5,7 @@ class LocationsController < ApplicationController
 
   def show
     @location = Location.find(params[:id])
-    @title = true
+    # @dont_show_title = true
   end
 
   def edit

@@ -1,9 +1,9 @@
 <div class="location">
-  <% if @location == false %>
+  <% if params[:action] != "show" %>
+  <%# if @dont_show_title == false %>
     <h3><%= location.name %></h3>
-    <% else %>
+  <% end %>
   <h4>City: <%= location.city %></h4>
   <%= location.description %> <br />
   <%= link_to image_tag(location.image, class: "location"), location_path(location) %>
-  <% end %>
 </div>
